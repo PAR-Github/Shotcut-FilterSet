@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+https://forum.shotcut.org/t/some-titling-filter-sets/39110
+
 add a color, picture or video in a empty track then apply the filter set for a lower third with 
 gradient texture, the color in the second filter gradient determinate the color of the lower third, 
 you can it animate with the “mask : from file” and you can use 
