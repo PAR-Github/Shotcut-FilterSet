@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+add a color, picture or video in an empty track then apply the filter set for a lower third with 2 color/texture, the color, picture
+ or video you use will determinate the texture of the lower third, you can it animate with the “mask : from file”
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" in="00:00:01.267" out="00:00:02.033">
+			<property name="version">1</property>
+			<property name="mlt_service">frei0r.cairogradient</property>
+			<property name="shotcut:filter">gradient</property>
+			<property name="0">gradient_radial</property>
+			<property name="1">#000000</property>
+			<property name="2">1</property>
+			<property name="3">#ffffff</property>
+			<property name="4">1</property>
+			<property name="9">0.999</property>
+			<property name="10">screen</property>
+			<property name="shotcut:rect">695 226 1236 789 1</property>
+			<property name="5">0.683854</property>
+			<property name="6">0.574537</property>
+			<property name="7">1.00573</property>
+			<property name="8">0.939815</property>
+		</filter>
+		<filter id="filter1" in="00:00:01.267" out="00:00:02.033">
+			<property name="rect">-291 881 1920 150 1</property>
+			<property name="circle">0</property>
+			<property name="color">#00000000</property>
+			<property name="radius">1</property>
+			<property name="mlt_service">qtcrop</property>
+			<property name="shotcut:filter">cropRectangle</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter2" in="00:00:01.267" out="00:00:02.033">
+			<property name="argument"></property>
+			<property name="geometry">45 900 1324 77 1</property>
+			<property name="family">Sans</property>
+			<property name="size">48</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">0x000000ff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">0x00000000</property>
+			<property name="pad">0</property>
+			<property name="halign">left</property>
+			<property name="valign">top</property>
+			<property name="outline">0</property>
+			<property name="pixel_ratio">1</property>
+			<property name="mlt_service">qtext</property>
+			<property name="shotcut:filter">richText</property>
+			<property name="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
