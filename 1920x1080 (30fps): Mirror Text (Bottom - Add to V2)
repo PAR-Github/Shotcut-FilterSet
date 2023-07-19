@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/mirror-animated-text-title-effect-utilising-filter-sets/39788
+
+On the timeline - add two transparent tracks - 6 seconds or more.
+Apply JR-mirror-text-TOP-V3 filter set to top track,
+Apply JR-mirror-text-BOTTOM-V2 filter set to bottom track.
+
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:06.500">
+			<property name="start">1</property>
+			<property name="level">1</property>
+			<property name="mlt_service">brightness</property>
+		</filter>
+		<filter id="filter1" out="00:00:06.500">
+			<property name="argument">MIRROR TEXT</property>
+			<property name="geometry">0=679 405 1920 270 1;26=0 405 1920 270 1;129=0 405 1920 270 1;149=0 537 1920 270 1</property>
+			<property name="family">VAGRounded BT</property>
+			<property name="size">1080</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">top</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">0</property>
+			<property name="shotcut:pointSize">60</property>
+		</filter>
+		<filter id="filter2" out="00:00:06.500">
+			<property name="rect">0|=0 0 960 1080 1;120|=0 0 1920 540 1</property>
+			<property name="circle">0</property>
+			<property name="color">#00000000</property>
+			<property name="radius">0</property>
+			<property name="mlt_service">qtcrop</property>
+			<property name="shotcut:filter">cropRectangle</property>
+			<property name="disable">0</property>
+		</filter>
+	</producer>
+</mlt>
