@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-shakes-transition/39649
+
+#        Transition SHAKES       #
+#          Project 30fps         #
+#     Transition: 0.5 second     #
+# Properties: Bar Horizont 60%   #
+#1 sec ArcElectric.mp3 in folder #
+
+-->
+<mlt LC_NUMERIC="C"
+	 version="7.17.0"
+	 root=""
+	 parent="producer0"
+	 in="00:00:00.000"
+	 out="00:08:19.967">
+	<producer id="producer0"
+			  in="00:00:00.000"
+			  out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter6"
+				out="00:00:00.467">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">0</property>
+			<property name="transition.rect">0=-152 -83 2208 1242 1;2=-149 -128 2208 1242 1;5=-2 -141 2208 1242 1;7=-140 -98 2208 1242 1;10=-143 -149 2208 1242 1;12=-196 -60 2208 1242 1;14=-127 -120 2208 1242 1;15=-117</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+			<property name="transition.fix_rotate_x">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter1"
+				out="00:00:00.467">
+			<property name="mlt_service">avfilter.random</property>
+			<property name="av.frames">9</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter0"
+				out="00:00:00.467">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.IIRblur</property>
+			<property name="shotcut:filter">blur_exponential</property>
+			<property name="1">0</property>
+			<property name="0">0=0;7=0.5;14=0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5"
+				out="00:00:00.467">
+			<property name="mlt_service">avfilter.tmix</property>
+			<property name="av.frames">8</property>
+			<property name="av.weights">1 2 3 4 5 6 7 8</property>
+			<property name="disable">0</property>
+		</filter>
+	</producer>
+</mlt>
