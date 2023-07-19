@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+add a color, picture or video in an empty track then apply the filter set for a simple lower third, the color, 
+the picture or the video is used for the texture of the lower third, you can it animate with the “mask : from file”
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" in="00:00:02.067" out="00:00:02.967">
+			<property name="rect">-291 881 1920 150 1</property>
+			<property name="circle">0</property>
+			<property name="color">#00000000</property>
+			<property name="radius">1</property>
+			<property name="mlt_service">qtcrop</property>
+			<property name="shotcut:filter">cropRectangle</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter1" in="00:00:02.067" out="00:00:02.967">
+			<property name="argument"></property>
+			<property name="geometry">45 900 1324 77 1</property>
+			<property name="family">Sans</property>
+			<property name="size">48</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">0x000000ff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">0x00000000</property>
+			<property name="pad">0</property>
+			<property name="halign">left</property>
+			<property name="valign">top</property>
+			<property name="outline">0</property>
+			<property name="pixel_ratio">1</property>
+			<property name="mlt_service">qtext</property>
+			<property name="shotcut:filter">richText</property>
+			<property name="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
