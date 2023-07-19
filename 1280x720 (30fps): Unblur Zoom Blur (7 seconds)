@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-unblur-zoom-blur-animated-title/39433
+
+Add a transparent clip in the Timeline and make it 7 seconds long.
+Make sure the clip is selected and go to the Filters panel.
+Click the + button and select the Sets category.
+Click on the TITLE_Unblur-Zoom-Blur filters set.
+
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:06.967">
+			<property name="argument">Y O U R  - T I T L E</property>
+			<property name="geometry">0 0 1280 720 1</property>
+			<property name="family">Verdana</property>
+			<property name="size">48</property>
+			<property name="weight">700</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:pointSize">36</property>
+		</filter>
+		<filter id="filter1" out="00:00:06.967">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">0</property>
+			<property name="transition.rect">0=32.1778 18 1216 684 1;209=-59.0922 -33.0313 1408 792 1</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:07.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+			<property name="transition.fix_rotate_x">0=0;209=0</property>
+		</filter>
+		<filter id="filter2" out="00:00:06.967">
+			<property name="mlt_service">avfilter.gblur</property>
+			<property name="shotcut:filter">blur_gaussian_av</property>
+			<property name="av.sigma">0=25;47=0;150=0;209=25</property>
+			<property name="av.sigmaV">0=25;47=0;150=0;209=25</property>
+			<property name="shotcut:animIn">00:00:02.000</property>
+			<property name="shotcut:animOut">00:00:02.000</property>
+		</filter>
+		<filter id="filter3" out="00:00:06.967">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.premultiply</property>
+			<property name="threads">0</property>
+			<property name="0">1</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter4" out="00:00:06.967">
+			<property name="start">1</property>
+			<property name="level">1</property>
+			<property name="mlt_service">brightness</property>
+			<property name="shotcut:filter">fadeInBrightness</property>
+			<property name="alpha">0=0;29=1</property>
+			<property name="shotcut:animIn">00:00:01.000</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5" out="00:00:06.967">
+			<property name="start">1</property>
+			<property name="level">1</property>
+			<property name="mlt_service">brightness</property>
+			<property name="shotcut:filter">fadeOutBrightness</property>
+			<property name="alpha">180=1;209=0</property>
+			<property name="shotcut:animOut">00:00:01.000</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter6" out="00:00:06.967">
+			<property name="window">75</property>
+			<property name="max_gain">20dB</property>
+			<property name="level">168=0;209=-60</property>
+			<property name="mlt_service">volume</property>
+			<property name="shotcut:filter">fadeOutVolume</property>
+			<property name="shotcut:animOut">42</property>
+		</filter>
+		<filter id="filter7" out="00:00:06.967">
+			<property name="window">75</property>
+			<property name="max_gain">20dB</property>
+			<property name="level">0=-60;39=0</property>
+			<property name="mlt_service">volume</property>
+			<property name="shotcut:filter">fadeInVolume</property>
+			<property name="shotcut:animIn">40</property>
+		</filter>
+	</producer>
+</mlt>
