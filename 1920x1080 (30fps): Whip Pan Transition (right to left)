@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-whip-pan-transition/39605
+
+Create a 20 frames transition between 2 clips
+Select the transition.
+Go to Filters > Sets
+Select the Whip Pan set.
+
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:00.633">
+			<property name="version">2.6</property>
+			<property name="mlt_service">frei0r.bigsh0t_transform_360</property>
+			<property name="shotcut:filter">bigsh0t_transform_360</property>
+			<property name="yaw">0=-360;19=360</property>
+			<property name="pitch">0</property>
+			<property name="roll">0</property>
+			<property name="interpolation">1</property>
+			<property name="grid">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter1" out="00:00:00.633">
+			<property name="hradius">0=10;4=80;15=80;19=10</property>
+			<property name="vradius">0</property>
+			<property name="mlt_service">box_blur</property>
+		</filter>
+		<filter id="filter2" out="00:00:00.633">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">1</property>
+			<property name="transition.rect">0=0 0 1920 1080 1;4=-540 0 3000 1080 1;15=0 0 3000 1080 1;19=0 0 1920 1080 1</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+		</filter>
+	</producer>
+</mlt>
+
