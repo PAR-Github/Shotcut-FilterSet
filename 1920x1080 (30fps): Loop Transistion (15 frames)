@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+#     Transition: LOOP      #
+# Project 1920x1080 - 30fps #
+#    Transition: 15 frames  #
+#    Properties: Cut 50%    #
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:00.467">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">0</property>
+			<property name="transition.rect">0=0 0 1920 1080 1;2~=-959.964 -540 3840 2160 1;7~=-1055.94 -594 4032 2268 1;12~=-959.999 -540 3840 2160 1;14~=0 0 1920 1080 1</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+			<property name="transition.fix_rotate_x">2=0;7=180;12=360</property>
+		</filter>
+		<filter id="filter1" out="00:00:00.467">
+			<property name="hradius">1~=0;4~=60;7~=30;10~=60;13~=0</property>
+			<property name="vradius">4~=0;7~=80;10~=0</property>
+			<property name="mlt_service">box_blur</property>
+		</filter>
+	</producer>
+</mlt>
