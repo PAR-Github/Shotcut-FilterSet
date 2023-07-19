@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+add a color, picture or video in a empty track then apply the filter set for a lower third with 
+gradient texture, the color in the second filter gradient determinate the color of the lower third, 
+you can it animate with the “mask : from file” and you can use 
+texture of video or picture if you change the parameter “fusion mode” in the gradient filter
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:01.233">
+			<property name="version">1</property>
+			<property name="mlt_service">frei0r.cairogradient</property>
+			<property name="shotcut:filter">gradient</property>
+			<property name="0">gradient_linear</property>
+			<property name="1">#000000</property>
+			<property name="2">1</property>
+			<property name="3">#ffffff</property>
+			<property name="4">1</property>
+			<property name="9">0.8</property>
+			<property name="10">normal</property>
+			<property name="shotcut:rect">960 0 0 1080 1</property>
+			<property name="5">0.5</property>
+			<property name="6">0</property>
+			<property name="7">0.5</property>
+			<property name="8">1</property>
+		</filter>
+		<filter id="filter2" out="00:00:01.233">
+			<property name="version">1</property>
+			<property name="mlt_service">frei0r.cairogradient</property>
+			<property name="shotcut:filter">gradient</property>
+			<property name="0">gradient_radial</property>
+			<property name="1">#00334b</property>
+			<property name="2">1</property>
+			<property name="3">#00aaff</property>
+			<property name="4">1</property>
+			<property name="9">0.614</property>
+			<property name="10">overlay</property>
+			<property name="shotcut:rect">143 555 1423 511 1</property>
+			<property name="5">0.445052</property>
+			<property name="6">0.750463</property>
+			<property name="7">0.815625</property>
+			<property name="8">0.987037</property>
+		</filter>
+		<filter id="filter3" out="00:00:01.233">
+			<property name="rect">-291 881 1920 150 1</property>
+			<property name="circle">0</property>
+			<property name="color">#00000000</property>
+			<property name="radius">1</property>
+			<property name="mlt_service">qtcrop</property>
+			<property name="shotcut:filter">cropRectangle</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter4" out="00:00:01.233">
+			<property name="argument"></property>
+			<property name="geometry">45 900 1324 77 1</property>
+			<property name="family">Sans</property>
+			<property name="size">48</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">0x000000ff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">0x00000000</property>
+			<property name="pad">0</property>
+			<property name="halign">left</property>
+			<property name="valign">top</property>
+			<property name="outline">0</property>
+			<property name="pixel_ratio">1</property>
+			<property name="mlt_service">qtext</property>
+			<property name="shotcut:filter">richText</property>
+			<property name="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
