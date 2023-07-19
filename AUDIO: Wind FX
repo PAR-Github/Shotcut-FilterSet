@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-audio-wind-fx/39606
+
+Create a track with noise (open generator - noise)
+Place this track below the video track, or create a separate audio track.
+Apply Wind FX to the noisy track.
+The filter is automated for about 15 seconds of duration, but you can extend this for as long as you like by simply adding keyframes to the Low Pass filter.
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+	<property name="length">15000</property>
+	<property name="eof">pause</property>
+	<property name="resource">black</property>
+	<property name="aspect_ratio">1</property>
+	<property name="mlt_service">color</property>
+	<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:29.967">
+			<property name="mlt_service">ladspa.1891</property>
+			<property name="0">0=220;90=800;150=400;240=1200;330=500;420=700;510=500;660=700;718=500;795=800;899=200</property>
+			<property name="1">2</property>
+			<property name="wetness">1</property><property name="instances">2</property>
+		</filter>
+		<filter id="filter1" out="00:00:29.967"><property name="mlt_service">ladspa.1216</property>
+			<property name="0">50</property>
+			<property name="1">10</property>
+			<property name="2">0.5</property>
+			<property name="3">0.75</property>
+			<property name="4">0</property>
+			<property name="5">-10</property>
+			<property name="6">-17.5</property>
+			<property name="instances">2</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter2" out="00:00:29.967"><property name="mlt_service">ladspa.1890</property>
+			<property name="0">80</property>
+			<property name="1">10</property>
+			<property name="wetness">1</property>
+			<property name="instances">2</property>
+		</filter>
+	</producer>
+</mlt>
+<!-- 
+Create a track with noise (open generator - noise)
+Place this track below the video track, or create a separate audio track.
+Apply Wind FX to the noisy track.
+The filter is automated for about 15 seconds of duration, but you can extend this for as long as you like by simply adding keyframes to the Low Pass filter.
+Shotcut - Settings - App Data Directory - Show - filter-sets (unzip the contents of the archive into this folder)
+  -->
