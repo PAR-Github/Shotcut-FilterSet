@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/info-bubble-filters-set/39384
+
+Launch Shotcut. Open a project or create a new one.
+Create a new track on top of the other tracks in the timeline.
+Open Other… > Color
+Create a BLACK clip (it is important to use a black clip), and add it to the new track.
+Make sure the clip is selected and go to the Filters panel.
+Click on the Info-Bubble filter set.
+
+In brief:
+The Crop: Rectangle filter is used to change the size and shape of the rectangle. You can also remove or increase the corner radius.
+The Mask: Simple Shape filter is used to change the shape, position and angle of the bubble arrow.
+The Color Grading filter is used to change the color of the bubble + the arrow.
+You only need to edit the values of the Shadow (Lift) wheel.
+The Text: Simple filter’s job is pretty obvious. Use it to change the text and format it (font, size, color etc…)
+The Size, Position & Rotate filter is used to move and resize the entire info bubble.
+Adding a 2 x 2 grid is helpful for aligning the text inside the bubble.
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:03.967">
+			<property name="rect">678 482 563 117 1</property>
+			<property name="circle">0</property>
+			<property name="color">#00000000</property>
+			<property name="radius">0.25</property>
+			<property name="mlt_service">qtcrop</property>
+			<property name="shotcut:filter">cropRectangle</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter1" out="00:00:03.967">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">0.75</property>
+			<property name="filter.0">0.666667</property>
+			<property name="shotcut:rect">677 545 60 157 1</property>
+			<property name="filter.1">0.368229</property>
+			<property name="filter.2">0.577315</property>
+			<property name="filter.3">0.015625</property>
+			<property name="filter.4">0.0726852</property>
+			<property name="filter.5">0.576667</property>
+			<property name="filter.6">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5" out="00:00:03.967">
+			<property name="lift_r">0.988006</property>
+			<property name="lift_g">-0.941985</property>
+			<property name="lift_b">-0.924987</property>
+			<property name="gamma_r">1.00002</property>
+			<property name="gamma_g">1.00002</property>
+			<property name="gamma_b">1.00002</property>
+			<property name="gain_r">1</property>
+			<property name="gain_g">1</property>
+			<property name="gain_b">1</property>
+			<property name="mlt_service">lift_gamma_gain</property>
+		</filter>
+		<filter id="filter2" out="00:00:03.967">
+			<property name="argument">YOUR TEXT HERE</property>
+			<property name="geometry">619 469 682 142 1</property>
+			<property name="family">Calibri</property>
+			<property name="size">64</property>
+			<property name="weight">700</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="shotcut:pointSize">48</property>
+		</filter>
+		<filter id="filter4" out="00:00:03.967">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">0</property>
+			<property name="transition.rect">0 0 1920 1080 1</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+			<property name="disable">0</property>
+			<property name="transition.fix_rotate_x">0</property>
+		</filter>
+	</producer>
+</mlt>
