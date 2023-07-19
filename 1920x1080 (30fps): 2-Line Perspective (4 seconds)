@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Add a 4 seconds transparent clip in the timeline.
+Make sure it is selected and go to the Filters panel.
+In the Sets category, choose the 2 lines perspective set.
+Put your own text in the two Text: Simple filters.
+-->
+<mlt LC_NUMERIC="C"
+	 version="7.17.0"
+	 root=""
+	 parent="producer0"
+	 in="00:00:00.000"
+	 out="00:08:19.967">
+	<producer id="producer0"
+			  in="00:00:00.000"
+			  out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0"
+				in="00:00:00.833"
+				out="00:00:04.800">
+			<property name="argument">Hello World</property>
+			<property name="geometry">0~=-1600 -65 1920 1080 1;15=210 -65 1920 1080 1;105=310 -65 1920 1080 1;119~=1600 -65 1920 1080 1</property>
+			<property name="family">Bebas Neue</property>
+			<property name="size">117</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:pointSize">88</property>
+		</filter>
+		<filter id="filter4"
+				in="00:00:00.833"
+				out="00:00:04.800">
+			<property name="argument">Hello Universe</property>
+			<property name="geometry">0~=1600 65 1920 1080 1;15=290 65 1920 1080 1;105=190 65 1920 1080 1;119~=-1600 65 1920 1080 1</property>
+			<property name="family">Bebas Neue</property>
+			<property name="size">117</property>
+			<property name="weight">400</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:pointSize">88</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5"
+				in="00:00:00.833"
+				out="00:00:04.800">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.c0rners</property>
+			<property name="0">0.333333</property>
+			<property name="1">0.433333</property>
+			<property name="2">0.666667</property>
+			<property name="3">0.0833333</property>
+			<property name="4">0.666667</property>
+			<property name="5">0.916667</property>
+			<property name="6">0.333333</property>
+			<property name="7">0.566667</property>
+			<property name="8">1</property>
+			<property name="9">0.6</property>
+			<property name="10">0.5</property>
+			<property name="11">0.333333</property>
+			<property name="12">1</property>
+			<property name="14">0.5</property>
+			<property name="13">0.01</property>
+			<property name="shotcut:corner1">0.333333 0.433333 1 1</property>
+			<property name="shotcut:corner2">0.666667 0.0833333 1 1</property>
+			<property name="shotcut:corner3">0.666667 0.916667 1 1</property>
+			<property name="shotcut:corner4">0.333333 0.566667 1 1</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter6"
+				in="00:00:00.833"
+				out="00:00:04.800">
+			<property name="hradius">0=10;13=10;15=0;105=0;109=10</property>
+			<property name="vradius">0</property>
+			<property name="mlt_service">box_blur</property>
+		</filter>
+		<filter id="filter7"
+				in="00:00:00.833"
+				out="00:00:04.800">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.premultiply</property>
+			<property name="threads">0</property>
+			<property name="0">1</property>
+			<property name="disable">0</property>
+		</filter>
+	</producer>
+</mlt>
