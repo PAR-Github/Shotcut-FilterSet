@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-fast-up-fast-down/39602
+
+Transition length must be exactly 1 second (30 frames)
+In the transition settings, be sure to set the “Cut” mode, and position - 5%.
+This effect was created for 1920x1080x30 fps video mode. I do not guarantee that it will work well in other video modes.
+
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+<property name="length">15000</property>
+<property name="eof">pause</property>
+<property name="resource">black</property>
+<property name="aspect_ratio">1</property>
+<property name="mlt_service">color</property>
+<property name="shotcut:filtersClipboard">1</property>
+<filter id="filter0" out="00:00:00.967">
+<property name="version">1.1</property>
+<property name="mlt_service">frei0r.rgbsplit0r</property>
+<property name="0">0=0.7;2=0.7;4=0.6;6=0.55;8=0.53;10=0.51;12=0.5</property>
+<property name="1">0.5</property>
+<property name="disable">0</property>
+</filter>
+<filter id="filter1" out="00:00:00.967">
+<property name="background">color:#00000000</property>
+<property name="mlt_service">affine</property>
+<property name="shotcut:filter">affineSizePosition</property>
+<property name="transition.fill">1</property>
+<property name="transition.distort">1</property>
+<property name="transition.rect">0~=0 0 1920 1620 1;1~=0 -540 1920 1620 1;2~=-1.98998e-13 0 1920 1350 1;4~=-1.98998e-13 -135 1920 1215 1;6~=-1.98998e-13 0 1920 1147.5 1;8~=-1.98998e-13 -40 1920 1120 1;10~=-1.98998e-13 0 1920 1090 1;12~=-1.98998e-13 0 1920 1080 1</property><property name="transition.valign">middle</property><property name="transition.halign">center</property><property name="shotcut:animIn">00:00:00.000</property><property name="shotcut:animOut">00:00:00.000</property><property name="transition.threads">0</property><property name="transition.fix_rotate_x">0</property></filter><filter id="filter2" out="00:00:00.967"><property name="start">1</property><property name="level">0=1.2;1=1.3;2=1.2;3=1.1;4=1</property><property name="mlt_service">brightness</property><property name="disable">0</property></filter><filter id="filter3" out="00:00:00.967"><property name="hradius">0</property><property name="vradius">0~=50;2~=50;3~=20;5~=10;7~=5;9~=2.5;12~=0</property><property name="mlt_service">box_blur</property><property name="disable">0</property></filter></producer></mlt>
