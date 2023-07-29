@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---
+
+https://forum.shotcut.org/t/how-to-install-filter-set/40010/19
+
+Cut 6 Frames for Intro (apply IN here)
+Cut 6 Frames for Outro (apply OUT here)
+
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:10:25.609"><producer id="producer0" in="00:00:00.000" out="00:10:25.609"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" out="00:00:00.209"><property name="version">2.6</property><property name="mlt_service">frei0r.bigsh0t_eq_to_rect</property><property name="shotcut:filter">bigsh0t_eq_to_rect</property><property name="yaw">0</property><property name="pitch">0</property><property name="roll">0</property><property name="fov">0=179;5=154</property><property name="fisheye">0</property><property name="interpolation">1</property></filter><filter id="filter1" out="00:00:00.209"><property name="version">1.1</property><property name="mlt_service">frei0r.rgbsplit0r</property><property name="0">0.4</property><property name="1">0=0.47;5=0.5</property><property name="disable">0</property></filter><filter id="filter3" out="00:00:00.209"><property name="mlt_service">avfilter.gblur</property><property name="shotcut:filter">blur_gaussian_av</property><property name="av.sigma">0=25;6=0</property><property name="av.sigmaV">0=25;6=0</property></filter></producer></mlt>
