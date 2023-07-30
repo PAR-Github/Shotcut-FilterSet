@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-simple-transitions-pack/40060
+
+Description:
+A set of smooth trend transitions. The transitions are designed for P1080 - 60 FPS mode.
+How to properly prepare clips:
+
+Create a slideshow with these options:
+Clip Duration: Any.
+Zoom Effect: Any.
+Transition Duration - 0.5s.
+Transition Type - Cut.
+-->
+<mlt LC_NUMERIC="C" version="7.18.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983">
+	<producer id="producer0" in="00:00:00.000" out="00:04:09.983">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:00.467">
+			<property name="version">2.6</property>
+			<property name="mlt_service">frei0r.bigsh0t_transform_360</property>
+			<property name="shotcut:filter">bigsh0t_transform_360</property>
+			<property name="yaw">0</property>
+			<property name="pitch">0~=0;12~=-11.801;14=-90;15~=90;17~=14.5;28=0</property>
+			<property name="roll">0</property>
+			<property name="interpolation">1</property>
+			<property name="grid">0</property>
+		</filter>
+	</producer>
+</mlt>
