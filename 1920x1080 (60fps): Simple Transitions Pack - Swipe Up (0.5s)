@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-simple-transitions-pack/40060
+
+Description:
+A set of smooth trend transitions. The transitions are designed for P1080 - 60 FPS mode.
+How to properly prepare clips:
+
+Create a slideshow with these options:
+Clip Duration: Any.
+Zoom Effect: Any.
+Transition Duration - 0.5s.
+Transition Type - Cut.
+-->
+<mlt LC_NUMERIC="C" version="7.18.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983">
+	<producer id="producer0" in="00:00:00.000" out="00:04:09.983">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:00.467">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.nosync0r</property>
+			<property name="shotcut:filter">nosync</property>
+			<property name="0">5~=0;11~=0.1311;13~=0.473039;14=0.75;15~=0.25;17~=0.83923;25~=1</property>
+		</filter>
+		<filter id="filter1" out="00:00:00.467">
+			<property name="hradius">0</property>
+			<property name="vradius">6~=0;8~=15;12~=86.4333;14=100;15~=100;17~=22.6792;25~=0</property>
+			<property name="mlt_service">box_blur</property>
+		</filter>
+	</producer>
+</mlt>
