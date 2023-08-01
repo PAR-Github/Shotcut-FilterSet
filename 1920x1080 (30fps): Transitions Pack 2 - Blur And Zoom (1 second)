@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-set-jr-transitions-pack-blur-stretch-zoom-plus-white-flash/40112
+(https://youtu.be/urIPwEq-oLA)
+
+Filter Set | JR Transitions Pack - blur/stretch/zoom plus white flash
+
+For the sake of naming conventions in this GitHub I have renamed the transitions here
+
+1920x1080 (24fps): Transitions Pack - Blur And Stretch (24 frames)
+(Transition type: DISSOLVE).
+
+#### THIS FILTER ####
+1920x1080 (30fps): Transitions Pack - Blur And Zoom (1 second)
+(Transition type: DISSOLVE).
+
+1920x1080 (30fps): Transitions Pack - Blur Horizontal (12 frames)
+(Transition type: DISSOLVE).
+
+1920x1080 (30fps): Transitions Pack - White Flash (45 frames)
+(Transition type: CUT - set at 50%).
+
+1920x1080 (30fps): Transitions Pack - White Flash (12 frames)
+(Transition type: CUT - set at 50%).
+-->
+<mlt LC_NUMERIC="C" version="7.17.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter36" out="00:00:00.967">
+			<property name="hradius">0=0;13=99.2188;28=0</property>
+			<property name="vradius">0</property>
+			<property name="mlt_service">box_blur</property>
+		</filter>
+		<filter id="filter37" out="00:00:00.967">
+			<property name="background">color:#00000000</property>
+			<property name="mlt_service">affine</property>
+			<property name="shotcut:filter">affineSizePosition</property>
+			<property name="transition.fill">1</property>
+			<property name="transition.distort">1</property>
+			<property name="transition.rect">00:00:00.000=0 0 1920 1080 1;00:00:00.433=-682.418 -290.769 3077.14 1628.9 1;00:00:00.967=0 0 1920 1080 1</property>
+			<property name="transition.valign">middle</property>
+			<property name="transition.halign">center</property>
+			<property name="shotcut:animIn">00:00:00.000</property>
+			<property name="shotcut:animOut">00:00:00.000</property>
+			<property name="transition.threads">0</property>
+		</filter>
+	</producer>
+</mlt>
