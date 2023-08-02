@@ -6,11 +6,20 @@ Description:
 A set of smooth trend transitions. The transitions are designed for P1080 - 60 FPS mode.
 How to properly prepare clips:
 
+SlideShow Instructions:-
 Create a slideshow with these options:
 Clip Duration: Any.
 Zoom Effect: Any.
 Transition Duration - 0.5s.
 Transition Type - Cut.
+
+Transitions Instructions:-
+Create a 0,5 second transition between 2 clips.
+Make sure the transition clip is selected and go to the Properties panel.
+Choose the Cut type of transition.
+Set Position to 50%
+Go to the Filters panel and click on the + button.
+In the Sets category, choose any of the 9 Filter Sets from the pack.
 -->
 <mlt LC_NUMERIC="C" version="7.18.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983">
 	<producer id="producer0" in="00:00:00.000" out="00:04:09.983">
