@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/two-lines-perspective-filter-set-new-file-available-for-the-2160p-30-fps-video-mode/40383
+
+Two lines perspective filter set
+that works on the 2160p, 30 fps Video Mode.
+
+-->
+<mlt LC_NUMERIC="C" version="7.19.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+	<producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:03.967">
+			<property name="argument">Hello World</property>
+			<property name="geometry">0~=-3200 -130 3840 2160 1;15=420 -130 3840 2160 1;105=620 -130 3840 2160 1;119~=3200 -130 3840 2160 1</property>
+			<property name="family">Verdana</property>
+			<property name="size">213</property>
+			<property name="weight">700</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:pointSize">160</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter4" out="00:00:03.967">
+			<property name="argument">Hello Universe</property>
+			<property name="geometry">0~=3200 130 3840 2160 1;15=580 130 3840 2160 1;105=380 130 3840 2160 1;119~=-3200 130 3840 2160 1</property>
+			<property name="family">Verdana</property>
+			<property name="size">213</property>
+			<property name="weight">700</property>
+			<property name="style">normal</property>
+			<property name="fgcolour">#ffffff</property>
+			<property name="bgcolour">#00000000</property>
+			<property name="olcolour">#aa000000</property>
+			<property name="pad">0</property>
+			<property name="halign">center</property>
+			<property name="valign">middle</property>
+			<property name="outline">0</property>
+			<property name="mlt_service">dynamictext</property>
+			<property name="shotcut:filter">dynamicText</property>
+			<property name="shotcut:usePointSize">1</property>
+			<property name="shotcut:pointSize">160</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5" out="00:00:03.967">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.c0rners</property>
+			<property name="0">0.333333</property>
+			<property name="1">0.433333</property>
+			<property name="2">0.666667</property>
+			<property name="3">0.0833333</property>
+			<property name="4">0.666667</property>
+			<property name="5">0.916667</property>
+			<property name="6">0.333333</property>
+			<property name="7">0.566667</property>
+			<property name="8">1</property>
+			<property name="9">0.6</property>
+			<property name="10">0.5</property>
+			<property name="11">0.333333</property>
+			<property name="12">1</property>
+			<property name="14">0.5</property>
+			<property name="13">0.01</property>
+			<property name="shotcut:corner1">0.333333 0.433333 1 1</property>
+			<property name="shotcut:corner2">0.666667 0.0833333 1 1</property>
+			<property name="shotcut:corner3">0.666667 0.916667 1 1</property>
+			<property name="shotcut:corner4">0.333333 0.566667 1 1</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter6" out="00:00:03.967">
+			<property name="hradius">0=10;13=10;15=0;105=0;109=10</property>
+			<property name="vradius">0</property>
+			<property name="mlt_service">box_blur</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter7" out="00:00:03.967">
+			<property name="version">0.2</property>
+			<property name="mlt_service">frei0r.premultiply</property>
+			<property name="threads">0</property>
+			<property name="0">1</property>
+			<property name="disable">0</property>
+		</filter>
+	</producer>
+</mlt>
