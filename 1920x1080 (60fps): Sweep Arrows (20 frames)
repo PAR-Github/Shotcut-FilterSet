@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+#      Transition: Sweeep_Arrows     #
+#      Project 1920x1080 - 60fps     #
+#       Transition: 20 frames        #
+#   Properties: Bar Horizontal 50%   #
+# Arrows color: Color Grading filter #
+-->
+<mlt LC_NUMERIC="C" version="7.19.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983">
+	<producer id="producer0" in="00:00:00.000" out="00:04:09.983">
+		<property name="length">15000</property>
+		<property name="eof">pause</property>
+		<property name="resource">black</property>
+		<property name="aspect_ratio">1</property>
+		<property name="mlt_service">color</property>
+		<property name="shotcut:filtersClipboard">1</property>
+		<filter id="filter0" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">0</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">0=-1710 -960 1920 3000 1;1=-1300 -960 1920 3000 1;10=640 -960 1920 3000 1</property>
+			<property name="filter.1">0=-0.390625;1=-0.177083;10=0.833333</property>
+			<property name="filter.2">0=0.5;1=0.5;10=0.5</property>
+			<property name="filter.3">0=0.5;1=0.5;10=0.5</property>
+			<property name="filter.4">0=1.38889;1=1.38889;10=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter1" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">1</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">0=-1730 -960 1920 3000 1;1=-1320 -960 1920 3000 1;10=620 -960 1920 3000 1</property>
+			<property name="filter.1">0=-0.401042;1=-0.1875;10=0.822917</property>
+			<property name="filter.2">0=0.5;1=0.5;10=0.5</property>
+			<property name="filter.3">0=0.5;1=0.5;10=0.5</property>
+			<property name="filter.4">0=1.38889;1=1.38889;10=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0.02</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter2" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">0.75</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">00:00:00.000|=-1920 -960 1920 3000 1;00:00:00.033=-1700 -960 1920 3000 1;00:00:00.233=650 -960 1920 3000 1</property>
+			<property name="filter.1">00:00:00.000|=-0.5;00:00:00.033=-0.385417;00:00:00.233=0.838542</property>
+			<property name="filter.2">00:00:00.000|=0.5;00:00:00.033=0.5;00:00:00.233=0.5</property>
+			<property name="filter.3">00:00:00.000|=0.5;00:00:00.033=0.5;00:00:00.233=0.5</property>
+			<property name="filter.4">00:00:00.000|=1.38889;00:00:00.033=1.38889;00:00:00.233=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter3" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">1</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">00:00:00.000|=-1920 -960 1920 3000 1;00:00:00.033=-1950 -960 1920 3000 1;00:00:00.233=400 -960 1920 3000 1;00:00:00.267=450 -960 1920 3000 1</property>
+			<property name="filter.1">00:00:00.000|=-0.5;00:00:00.033=-0.515625;00:00:00.233=0.708333;00:00:00.267=0.734375</property>
+			<property name="filter.2">00:00:00.000|=0.5;00:00:00.033=0.5;00:00:00.233=0.5;00:00:00.267=0.5</property>
+			<property name="filter.3">00:00:00.000|=0.5;00:00:00.033=0.5;00:00:00.233=0.5;00:00:00.267=0.5</property>
+			<property name="filter.4">00:00:00.000|=1.38889;00:00:00.033=1.38889;00:00:00.233=1.38889;00:00:00.267=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0.04</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter4" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">0.75</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">00:00:00.000|=-1920 -960 1920 3000 1;00:00:00.067=-1800 -960 1920 3000 1;00:00:00.233=130 -960 1920 3000 1;00:00:00.267=850 -960 1920 3000 1</property>
+			<property name="filter.1">00:00:00.000|=-0.5;00:00:00.067=-0.4375;00:00:00.233=0.567708;00:00:00.267=0.942708</property>
+			<property name="filter.2">00:00:00.000|=0.5;00:00:00.067=0.5;00:00:00.233=0.5;00:00:00.267=0.5</property>
+			<property name="filter.3">00:00:00.000|=0.5;00:00:00.067=0.5;00:00:00.233=0.5;00:00:00.267=0.5</property>
+			<property name="filter.4">00:00:00.000|=1.38889;00:00:00.067=1.38889;00:00:00.233=1.38889;00:00:00.267=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter5" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">1</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">00:00:00.000|=-1920 -960 1920 3000 1;00:00:00.067=-2462 -960 1920 3000 1;00:00:00.233=-475 -960 1920 3000 1;00:00:00.300=635 -960 1920 3000 1</property>
+			<property name="filter.1">00:00:00.000|=-0.5;00:00:00.067=-0.782292;00:00:00.233=0.252604;00:00:00.300=0.830729</property>
+			<property name="filter.2">00:00:00.000|=0.5;00:00:00.067=0.5;00:00:00.233=0.5;00:00:00.300=0.5</property>
+			<property name="filter.3">00:00:00.000|=0.5;00:00:00.067=0.5;00:00:00.233=0.5;00:00:00.300=0.5</property>
+			<property name="filter.4">00:00:00.000|=1.38889;00:00:00.067=1.38889;00:00:00.233=1.38889;00:00:00.300=1.38889</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0.06</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter6" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">0.75</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">0|=-2500 -1360 2500 3800 1;10=-2290 -1360 2500 3800 1;14=-1550 -1360 2500 3800 1;19=-380 -1380 2500 3800 1</property>
+			<property name="filter.1">0|=-0.651042;10=-0.541667;14=-0.15625;19=0.453125</property>
+			<property name="filter.2">0|=0.5;10=0.5;14=0.5;19=0.481481</property>
+			<property name="filter.3">0|=0.651042;10=0.651042;14=0.651042;19=0.651042</property>
+			<property name="filter.4">0|=1.75926;10=1.75926;14=1.75926;19=1.75926</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter7" out="00:00:00.317">
+			<property name="filter">frei0r.alphaspot</property>
+			<property name="mlt_service">mask_start</property>
+			<property name="shotcut:filter">maskSimpleShape</property>
+			<property name="filter.9">1</property>
+			<property name="filter.0">1</property>
+			<property name="shotcut:rect">0|=-2500 -1360 2500 3800 1;10=-2310 -1360 2500 3800 1;14=-1570 -1360 2500 3800 1;19=-580 -1360 2700 3800 1</property>
+			<property name="filter.1">0|=-0.651042;10=-0.552083;14=-0.166667;19=0.401042</property>
+			<property name="filter.2">0|=0.5;10=0.5;14=0.5;19=0.5</property>
+			<property name="filter.3">0|=0.651042;10=0.651042;14=0.651042;19=0.703125</property>
+			<property name="filter.4">0|=1.75926;10=1.75926;14=1.75926;19=1.75926</property>
+			<property name="filter.5">0.5</property>
+			<property name="filter.6">0.09</property>
+			<property name="disable">0</property>
+		</filter>
+		<filter id="filter8" out="00:00:00.317">
+			<property name="lift_r">0.63299</property>
+			<property name="lift_g">0.63299</property>
+			<property name="lift_b">0.63299</property>
+			<property name="gamma_r">1.93799</property>
+			<property name="gamma_g">1.93799</property>
+			<property name="gamma_b">1.93799</property>
+			<property name="gain_r">0.00144362</property>
+			<property name="gain_g">0.0338535</property>
+			<property name="gain_b">0.20249</property>
+			<property name="mlt_service">lift_gamma_gain</property>
+		</filter>
+		<filter id="filter9" out="00:00:00.317">
+			<property name="transition">frei0r.composition</property>
+			<property name="mlt_image_format">rgba</property>
+			<property name="mlt_service">mask_apply</property>
+			<property name="transition.threads">0</property>
+			<property name="disable">0</property>
+		</filter>
+	</producer>
+</mlt>
