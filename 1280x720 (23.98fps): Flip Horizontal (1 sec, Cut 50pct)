@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://forum.shotcut.org/t/filter-sets-flip-horizontal-transition/40486
+
+How to use:
+	Create a 1-second transition between 2 clips. Preferably on track V1
+	Select the transition clip.
+	Go to the Properties panel.
+	Choose the Cut option, and set Position at 50%
+	Go to Filters > Sets
+	Select the Flip-Horizontal filter set.
+
+Notes:
+I have set background behind the animation to black.
+If you want to use a different color, edit the Background Color parameter of the Size, Position & Rotate filter If the transition is on any other track than track V1,
+AND
+if there is content (video, image, color clip) directly below the transition, you will need to set the Background Color parameter to transparent (Alpha channel = 0)
+
+-->
+<mlt LC_NUMERIC="C" version="7.19.0" root="" parent="producer0" in="00:00:00.000" out="00:10:25.609"><producer id="producer0" in="00:00:00.000" out="00:10:25.609"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" out="00:00:00.959"><property name="version">0.2</property><property name="mlt_service">frei0r.c0rners</property><property name="0">0=0.333333;12=0.5;13=0.5;23=0.333333</property><property name="1">0=0.333333;12=0.416667;13=0.333333;23=0.333333</property><property name="2">0=0.666667;12=0.5;13=0.5;23=0.666667</property><property name="3">0=0.333333;12=0.333333;13=0.416667;23=0.333333</property><property name="4">0=0.666667;12=0.5;13=0.5;23=0.666667</property><property name="5">0=0.666667;12=0.666667;13=0.583333;23=0.666667</property><property name="6">0=0.333333;12=0.5;13=0.5;23=0.333333</property><property name="7">0=0.666667;12=0.583333;13=0.666667;23=0.666667</property><property name="8">1</property><property name="9">0.5</property><property name="10">0.5</property><property name="11">0.333333</property><property name="12">1</property><property name="14">0</property><property name="13">0.02</property><property name="shotcut:corner1">0=0.333333 0.333333 1;12=0.5 0.416667 1 1;13=0.5 0.333333 1;23=0.333333 0.333333 1</property><property name="shotcut:corner2">0=0.666667 0.333333 1;12=0.5 0.333333 1 1;13=0.5 0.416667 1;23=0.666667 0.333333 1</property><property name="shotcut:corner3">0=0.666667 0.666667 1;12=0.5 0.666667 1 1;13=0.5 0.583333 1;23=0.666667 0.666667 1</property><property name="shotcut:corner4">0=0.333333 0.666667 1;12=0.5 0.583333 1 1;13=0.5 0.666667 1;23=0.333333 0.666667 1</property></filter><filter id="filter1" out="00:00:00.959"><property name="background">color:#000000</property><property name="mlt_service">affine</property><property name="shotcut:filter">affineSizePosition</property><property name="transition.fill">1</property><property name="transition.distort">0</property><property name="transition.rect">0~=0 0 1280 720 1;12~=128 72 1024 576 1;23~=0 0 1280 720 1</property><property name="transition.valign">middle</property><property name="transition.halign">center</property><property name="shotcut:animIn">00:00:00.000</property><property name="shotcut:animOut">00:00:00.000</property><property name="transition.threads">0</property><property name="transition.fix_rotate_x">0</property></filter></producer></mlt>
