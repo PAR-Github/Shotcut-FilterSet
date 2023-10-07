@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="7.19.0" root="" parent="producer12" in="00:00:00.000" out="00:00:07.700">
+  <producer id="producer12" in="00:00:00.000" out="00:00:07.700">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <property name="meta.shotcut.vui">1</property>
+    <filter id="filter86" out="00:00:07.700">
+      <property name="argument">ROBOTS</property>
+      <property name="geometry">00:00:00.000=0 -334 1920 1080 1;00:00:00.400~=0 -93 1920 1080 1;00:00:01.400=0 -54 1920 1080 1;00:00:04.633=0 -54 1920 1080 1;00:00:05.367=0 -400 1920 1080 1</property>
+      <property name="family">Segoe UI Black</property>
+      <property name="size">120</property>
+      <property name="weight">900</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.033=#00ffffff;00:00:01.300=#ffffffff;00:00:04.633=#ffffffff;00:00:05.367=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">middle</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">90</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter87" out="00:00:07.700">
+      <property name="argument">a documentary by</property>
+      <property name="geometry">00:00:00.000=-761 70 1920 1080 1;00:00:00.600~=-153 70 1920 1080 1;00:00:01.400=0 70 1920 1080 1;00:00:04.633=0 70 1920 1080 1;00:00:05.367=-600 70 1920 1080 1</property>
+      <property name="family">Segoe Fluent Icons</property>
+      <property name="size">53</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:01.300=#ffffffff;00:00:04.633=#ffffffff;00:00:05.367=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">middle</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">40</property>
+    </filter>
+    <filter id="filter198" out="00:00:07.700">
+      <property name="argument"> Anne Droid</property>
+      <property name="geometry">00:00:00.000=761 150 1920 1080 1;00:00:00.600~=153 150 1920 1080 1;00:00:01.400=0 150 1920 1080 1;00:00:04.633=0 150 1920 1080 1;00:00:05.367=600 150 1920 1080 1</property>
+      <property name="family">Segoe Fluent Icons</property>
+      <property name="size">80</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:01.300=#ffffffff;00:00:04.633=#ffffffff;00:00:05.367=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">middle</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">60</property>
+    </filter>
+  </producer>
+</mlt>
