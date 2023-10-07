@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="7.19.0" root="" parent="producer22" in="00:00:00.000" out="00:00:12.967">
+  <producer id="producer22" in="00:00:00.000" out="00:00:12.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">#00000000</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="shotcut:caption">transparent</property>
+    <property name="shotcut:detail">transparent</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <property name="seekable">1</property>
+    <filter id="filter186" out="00:00:12.967">
+      <property name="start">1</property>
+      <property name="level">1</property>
+      <property name="mlt_service">brightness</property>
+    </filter>
+    <filter id="filter187" out="00:00:12.967">
+      <property name="argument">I have created different animation styles.</property>
+      <property name="geometry">00:00:00.000~=0 0 1920 1080 1;00:00:00.267=400 0 1920 1080 1;00:00:08.333=400 0 1920 1080 1;00:00:08.733=1200 0 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:00.800=#ffffffff;00:00:04.000=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter188" out="00:00:12.967">
+      <property name="argument">For this style, the text enters quickly from the left....</property>
+      <property name="geometry">00:00:00.000=0 0 1920 1080 1;00:00:00.267=0 70 1920 1080 1;00:00:00.533=400 70 1920 1080 1;00:00:08.333=400 70 1920 1080 1;00:00:08.733=-800 70 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:00.267=#00ffffff;00:00:01.067=#ffffffff;00:00:01.600=#ffffffff;00:00:04.000=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter189" out="00:00:12.967">
+      <property name="argument"></property>
+      <property name="geometry">00:00:00.000=0 140 1920 1080 1;00:00:00.533=0 140 1920 1080 1;00:00:00.800=400 140 1920 1080 1;00:00:08.333=400 140 1920 1080 1;00:00:08.733=1200 180 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:00.533=#00ffffff;00:00:01.067=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter190" out="00:00:12.967">
+      <property name="argument">... and at the end the lines fly off very FAST,</property>
+      <property name="geometry">00:00:00.000=0 210 1920 1080 1;00:00:00.800=0 210 1920 1080 1;00:00:01.067=400 210 1920 1080 1;00:00:08.333=400 210 1920 1080 1;00:00:08.733=-800 210 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:00.800=#00ffffff;00:00:01.333=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter191" out="00:00:12.967">
+      <property name="argument">each line going in a different direction.</property>
+      <property name="geometry">00:00:00.000=0 280 1920 1080 1;00:00:01.067=0 280 1920 1080 1;00:00:01.333=400 280 1920 1080 1;00:00:08.333=400 280 1920 1080 1;00:00:08.733=1200 280 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:01.067=#00ffffff;00:00:01.600=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter192" out="00:00:12.967">
+      <property name="argument"></property>
+      <property name="geometry">00:00:00.000=0 350 1920 1080 1;00:00:01.333=0 350 1920 1080 1;00:00:01.600=400 350 1920 1080 1;00:00:08.333=400 350 1920 1080 1;00:00:08.733=-800 350 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000|=#00ffffff;00:00:01.333=#00ffffff;00:00:01.867=#ffffffff;00:00:04.000=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter193" out="00:00:12.967">
+      <property name="argument"></property>
+      <property name="geometry">00:00:00.000=0 420 1920 1080 1;00:00:01.600=0 420 1920 1080 1;00:00:01.867=400 430 1920 1080 1;00:00:08.333=400 420 1920 1080 1;00:00:08.733=1200 420 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:01.600=#00ffffff;00:00:02.133=#ffffffff;00:00:04.000=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter194" out="00:00:12.967">
+      <property name="argument"></property>
+      <property name="geometry">00:00:00.000=0 490 1920 1080 1;00:00:01.867=0 490 1920 1080 1;00:00:02.133=400 490 1920 1080 1;00:00:08.333=400 490 1920 1080 1;00:00:08.733=-800 490 1920 1080 1</property>
+      <property name="family">Arial</property>
+      <property name="size">56</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">00:00:00.000=#00ffffff;00:00:01.867=#00ffffff;00:00:02.667=#ffffffff;00:00:08.333=#ffffffff;00:00:08.733=#00ffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#00000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">1</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="shotcut:pointSize">42</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter195" out="00:00:12.967">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-56.6525 373.802 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+</mlt>
