@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- 
+https://forum.shotcut.org/t/instant-flashing-arrow-using-text-filter-set/41749
+
+Text:simple - with text opacity keyframed to turn the arrow off an on (with small fades) at regular intervals (8 frames apart);
+SPR filter - so you can change the size, position and/or rotation of the arrow;
+Colour Grading filter - NB the original font colour is white - however you can change the colour of the arrow by clicking around on the righ-hand colour wheel.
+
+--->
+
+
+<mlt LC_NUMERIC="C" version="7.21.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967">
+  <producer id="producer0" in="00:00:00.000" out="00:08:19.967">
+    <property name="length">15000</property>
+    <property name="eof">pause</property>
+    <property name="resource">black</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="shotcut:filtersClipboard">1</property>
+    <filter id="filter0" out="00:00:14.867">
+      <property name="argument">a</property>
+      <property name="geometry">0 18 1920 1062 1</property>
+      <property name="family">PizzaDude Pointers</property>
+      <property name="size">1080</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="opacity">0=0;8=1;16=1;22|=0;30=0;39|=1;47=1;54|=0;62=0;70=1;78=1;86=0;93=0;102=1;110=1;117=0;126=0;133=1;141=1;149|=0.03125;157=0.03125;165|=1;173=1;181|=0;189=0;199|=1;205=1;213=0;221=0;231|=1;238=1;246=0;254=0.03125;263|=1;271=1;279=0;287=0;295=1;303=1;311=0;319=0;327=1;336=1;343=0;351=0;359=1;367=1;374=0;382=0;387=1;394=1;403=0;428|=0</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:pointSize">60</property>
+    </filter>
+    <filter id="filter1" out="00:00:14.867">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">576 324 768 432 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">-20</property>
+    </filter>
+    <filter id="filter2" out="00:00:14.867">
+      <property name="lift_r">0</property>
+      <property name="lift_g">0</property>
+      <property name="lift_b">0</property>
+      <property name="gamma_r">1</property>
+      <property name="gamma_g">1</property>
+      <property name="gamma_b">1</property>
+      <property name="gain_r">0.925424</property>
+      <property name="gain_g">1.00003</property>
+      <property name="gain_b">0.302496</property>
+      <property name="mlt_service">lift_gamma_gain</property>
+    </filter>
+  </producer>
+</mlt>
