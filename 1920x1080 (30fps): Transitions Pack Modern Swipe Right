@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+
+https://forum.shotcut.org/t/filter-set-transitions-pack-modern/41758
+
+Description:
+
+Simple and modern transitions for slideshows… Transitions are made for square mode (for Instagram, Facebook and other social networks) 30 or 60 frames per second.
+How to properly prepare clips:
+
+Create a slideshow with these options:
+
+Clip Duration: Any.
+Zoom Effect: Any.
+Transition Duration - 0.5s (60 fps), 1.0s (30 fps).
+Transition Type - Cut.
+Can also be used as a simple transition between two clips, it must be exactly 30 frames long.
+
+Important Note:
+
+Shotcut version 23.11.29 and higher is required, because filters work on new types of keyframes.
+
+-->
+<mlt LC_NUMERIC="C" version="7.22.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983"><producer id="producer0" in="00:00:00.000" out="00:04:09.983"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" out="00:00:00.467"><property name="version">2.6</property><property name="mlt_service">frei0r.bigsh0t_transform_360</property><property name="shotcut:filter">bigsh0t_transform_360</property><property name="yaw">0r=360;28=0</property><property name="pitch">0</property><property name="roll">0</property><property name="interpolation">1</property><property name="grid">0</property></filter><filter id="filter2" out="00:00:00.467"><property name="version">1.1</property><property name="mlt_service">frei0r.rgbsplit0r</property><property name="0">0.5</property><property name="1">0p=0.5;15q=0.7;28=0.5</property></filter><filter id="filter1" out="00:00:00.467"><property name="hradius">0p=0;15q=35;28=0</property><property name="vradius">0</property><property name="mlt_service">box_blur</property></filter></producer></mlt>
