@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+
+https://forum.shotcut.org/t/filter-set-transitions-pack-modern/41758
+
+Description:
+
+Simple and modern transitions for slideshows… Transitions are made for square mode (for Instagram, Facebook and other social networks) 30 or 60 frames per second.
+How to properly prepare clips:
+
+Create a slideshow with these options:
+
+Clip Duration: Any.
+Zoom Effect: Any.
+Transition Duration - 0.5s (60 fps), 1.0s (30 fps).
+Transition Type - Cut.
+Can also be used as a simple transition between two clips, it must be exactly 30 frames long.
+
+Important Note:
+
+Shotcut version 23.11.29 and higher is required, because filters work on new types of keyframes.
+
+-->
+<mlt LC_NUMERIC="C" version="7.22.0" root="" parent="producer0" in="00:00:00.000" out="00:04:09.983"><producer id="producer0" in="00:00:00.000" out="00:04:09.983"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" out="00:00:00.467"><property name="background">color:#00000000</property><property name="mlt_service">affine</property><property name="shotcut:filter">affineSizePosition</property><property name="transition.fill">1</property><property name="transition.distort">0</property><property name="transition.rect">270 270 540 540 1</property><property name="transition.valign">middle</property><property name="transition.halign">center</property><property name="shotcut:animIn">00:00:00.000</property><property name="shotcut:animOut">00:00:00.000</property><property name="transition.threads">0</property><property name="transition.fix_rotate_x">0</property></filter><filter id="filter1" out="00:00:00.467"><property name="rect">270 270 540 540 1</property><property name="blur">4</property><property name="mlt_service">pillar_echo</property><property name="shotcut:filter">blur_pad</property><property name="disable">0</property></filter><filter id="filter2" out="00:00:00.467"><property name="background">color:#00000000</property><property name="mlt_service">affine</property><property name="shotcut:filter">affineSizePosition</property><property name="transition.fill">1</property><property name="transition.distort">0</property><property name="transition.rect">-539.7 -540 2160 2160 1</property><property name="transition.valign">middle</property><property name="transition.halign">center</property><property name="shotcut:animIn">00:00:00.000</property><property name="shotcut:animOut">00:00:00.000</property><property name="transition.threads">0</property><property name="disable">0</property><property name="transition.fix_rotate_x">0r=360;28=0</property></filter></producer></mlt>
