@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+3840x2160 (50fps): Real Barn Door RIGHT (0.5 sec)
+
+https://forum.shotcut.org/t/filter-set-real-barn-doors-transition/41911
+
+This transition requires two Filter Sets. The result is similar to the Barn door Horizontal transition included in Shotcut, except that this one really cuts the top video in two parts.
+
+In Githube you’ll find versions of the Filter Sets for projects in these resolutions:
+
+HD 1080p
+UHD 2160p
+AND these frame rates:
+
+24fps (works also on 23.98fps and 25fps projects)
+30fps (works also on 29.97fps projects)
+50fps
+60fps (works also on 59.94fps projects)
+
+
+Install the one(s) you need. Don’t forget that you need two Filter Sets for this transition.
+One LEFT, one RIGHT.
+
+How to install a filter set:
+Download the ZIP file and un-zip it.
+In Shotcut, go to Settings > App Data Directory > Show
+If you don’t see a filter-sets folder, create one (use that exact name).
+Open the filter-sets folder.
+Move the un-zipped filter set file(s) of your choice in that folder.
+Close and re-launch Shotcut.
+Your new filter set(s) should be visible in Filters > Sets
+
+-->
+<mlt LC_NUMERIC="C" version="7.22.0" root="" parent="producer0" in="00:00:00.000" out="00:04:59.980"><producer id="producer0" in="00:00:00.000" out="00:04:59.980"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" in="00:00:04.820" out="00:00:05.300"><property name="background">color:#00000000</property><property name="mlt_service">affine</property><property name="shotcut:filter">affineSizePosition</property><property name="transition.fill">1</property><property name="transition.distort">0</property><property name="transition.rect">0=0 0 3840 2160 1;24=1920 0 3840 2160 1</property><property name="transition.valign">middle</property><property name="transition.halign">center</property><property name="shotcut:animIn">00:00:00.000</property><property name="shotcut:animOut">00:00:00.000</property><property name="transition.threads">0</property></filter><filter id="filter1" in="00:00:04.820" out="00:00:05.300"><property name="rect">0=1920 0 1920 2160 1;24=3840 0 1920 2160 1</property><property name="circle">0</property><property name="color">#00000000</property><property name="radius">0</property><property name="mlt_service">qtcrop</property><property name="shotcut:filter">cropRectangle</property><property name="disable">0</property></filter></producer></mlt>
