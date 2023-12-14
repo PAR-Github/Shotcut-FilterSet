@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---
+
+https://forum.shotcut.org/t/filter-set-fun-text-animation/41982
+
+1920x1080 (30fps): Fun Text Animation 1 (2 secs)
+
+Description:
+
+A small set of two text animation options for your videos. The animation was created for video mode 1920x1080x30fps.
+How to properly prepare clips:
+
+Create a color object with the following parameters:
+
+White color.
+Duration 2 seconds.
+How to install this effect:
+
+Shotcut - Settings - App Data Directory - Show - filter-sets (unzip the contents of the archive into this folder).
+Important Note:
+
+Shotcut version 23.11.29 and higher is required, because filters work on new types of keyframes.
+-->
+<mlt LC_NUMERIC="C" version="7.22.0" root="" parent="producer0" in="00:00:00.000" out="00:08:19.967"><producer id="producer0" in="00:00:00.000" out="00:08:19.967"><property name="length">15000</property><property name="eof">pause</property><property name="resource">black</property><property name="aspect_ratio">1</property><property name="mlt_service">color</property><property name="shotcut:filtersClipboard">1</property><filter id="filter0" out="00:00:01.967"><property name="argument">PRINT HERE
+YOUR TEXT!</property><property name="geometry">480 405 960 270 1</property><property name="family">Ubuntu</property><property name="size">540</property><property name="weight">700</property><property name="style">normal</property><property name="fgcolour">#ff000000</property><property name="bgcolour">#00000000</property><property name="olcolour">#aa000000</property><property name="pad">0</property><property name="halign">center</property><property name="valign">middle</property><property name="outline">0</property><property name="opacity">1</property><property name="mlt_service">dynamictext</property><property name="shotcut:filter">dynamicText</property><property name="shotcut:usePointSize">0</property><property name="shotcut:pointSize">60</property><property name="disable">0</property></filter><filter id="filter1" out="00:00:01.967"><property name="hradius">0$=15;4$=4;7$=8;9$=2;30=0;45p=0;59=20</property><property name="vradius">20g=0;30h=10;40=0</property><property name="mlt_service">box_blur</property><property name="disable">0</property></filter><filter id="filter2" out="00:00:01.967"><property name="version">2.6</property><property name="mlt_service">frei0r.bigsh0t_eq_to_stereo</property><property name="shotcut:filter">bigsh0t_eq_to_stereo</property><property name="yaw">0z=180;30=0</property><property name="pitch">20i=-90;40=0</property><property name="roll">0</property><property name="fov">45p=160;59=0</property><property name="amount">100</property><property name="interpolation">1</property><property name="disable">0</property></filter><filter id="filter3" out="00:00:01.967"><property name="rect">0|=0 0 1920 540 1;20=0 0 1920 1080 1</property><property name="circle">0</property><property name="color">#ffffffff</property><property name="radius">0</property><property name="mlt_service">qtcrop</property><property name="shotcut:filter">cropRectangle</property><property name="disable">0</property></filter></producer></mlt>
